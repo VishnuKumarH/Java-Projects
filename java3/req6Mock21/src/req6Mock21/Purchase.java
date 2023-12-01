@@ -1,0 +1,56 @@
+package req6Mock21;
+
+import java.sql.Date;
+
+public class Purchase {
+	private Integer id;
+	private Double price;
+	private String couponCode;
+	private Date purchaseDate;
+	private User user;
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public Double getPrice() {
+		return price;
+	}
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+	public String getCouponCode() {
+		return couponCode;
+	}
+	public void setCouponCode(String couponCode) {
+		this.couponCode = couponCode;
+	}
+	public Date getPurchaseDate() {
+		return purchaseDate;
+	}
+	public void setPurchaseDate(java.util.Date date) {
+		this.purchaseDate = (Date) date;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	
+	public Purchase() {
+		
+	}
+	public Purchase(Integer id, Double price, String couponCode, Date purchaseDate, User user) {
+		super();
+		this.id = id;
+		this.price = price;
+		this.couponCode = couponCode;
+		this.purchaseDate = purchaseDate;
+		this.user = user;
+	}
+	
+	
+
+}
